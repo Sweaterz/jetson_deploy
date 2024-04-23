@@ -1,2 +1,2 @@
 # jetson_deploy
-some scripts help to deploy the jetson environment.
+A few of scripts help to deploy the jetson environment.
