@@ -36,7 +36,8 @@ Or you can modify it in line 24 of ./scripts/optimized_script.sh.
 
 ## How to start
 You can run the command below on your command shell, then enter the menu interface.
->$ git clone https://github.com/Sweaterz/jetson_deploy.git
->$ cd jetson_deploy
->$ python3 demo.py  
-  
+```
+$ git clone https://github.com/Sweaterz/jetson_deploy.git
+$ cd jetson_deploy
+$ python3 demo.py  
+```
