@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+#!/usr/bin/python3
+"""
+demo.py
+Provides an easy-to-use interface to deploy the Jetson TX2 NX environment using shell scripts.
+"""
 from SimpleMenu import Menu
 import os
 import time
