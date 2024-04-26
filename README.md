@@ -1,4 +1,4 @@
-# jetson_deploy
+# Jetson TX2 NX Deployment
 A few of scripts help to deploy the jetson environment.  
 
 ## Description
@@ -9,7 +9,7 @@ Board: Jetson TX2 NX
 Jetpack 4.6.2
 
 ## Scripts
-### boot on SSD
+### Boot on SSD
 Generally, you burn the system into your eMMC. The eMMC just has small capacity, so you can boot it on your SSD. 
 
 To do that, we need run scripts from Jetsonhacks [**rootOnNVMe**](https://github.com/jetsonhacks/rootOnNVMe.git) repository. I've bundled it into a single script.  All you need to do is run the 'bootOnSSD.sh' script.  
@@ -18,15 +18,16 @@ This script will help you format the disk '/dev/nvme0n1' to load the system. It 
 
 **Note:** The script will format the disk /dev/nvme0n1, so you need to check if any file still neccessary on the disk.
 
-### set Network
+### Set Network
 This script simply moves the configure file to '/etc/NetworkManager/system-connections' allowing your device automatically connect to the specified WiFi.
 
-### install CUDA cuDNN tensorRT packages
-This script simply installs the CUDA, cuDNN, and tensorRT Debian packages which are compatible with jetson 4.6.2.
+### Install CUDA cuDNN tensorRT packages
+This script, "optimized_script.sh", simply installs the CUDA, cuDNN, and tensorRT Debian packages which are compatible with jetson 4.6.2.
 
-By the way, you can download the CUDA cuDNN tensorRT package above through the link:
-
-https://space.dingtalk.com/s/gwHPAAAAAllsYB0CzkZl8zAD2gAgMDRkZmVkYjgxYjM0NDFmNDgxZGZmNmE4YWQ2N2JhMWU 密码: JzRj
+**Note:** You need download the CUDA cuDNN tensorRT package through:
+Click [**Here**](https://space.dingtalk.com/s/gwHPAAAAAllsYB0CzkZl8zAD2gAgMDRkZmVkYjgxYjM0NDFmNDgxZGZmNmE4YWQ2N2JhMWU) to download. 
+Secret Code(密码): JzRj
+Available until 2024-07-25 13:16.
 
 
 **Note:** You need to put CUDA cuDNN tensorRT debian package in path:  **"/home/hk/deb/deb"**   
