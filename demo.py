@@ -49,7 +49,7 @@ while True:
     elif choiceNum == 6:
         flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'xxxxxxx')}")
     elif choiceNum == 7:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'installSoftware.sh')}")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'installSoftware.sh')} | tee -a ./log/test.log")
     elif choiceNum == 8:
         flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'test.sh')}")
         print("测试")
