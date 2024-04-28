@@ -3,17 +3,15 @@
 """
 demo.py
 Provides an easy-to-use interface to deploy the Jetson TX2 NX environment using shell scripts.
+提供了一种简单的操作界面部署Jetson开发板
 """
 from SimpleMenu import Menu
 import os
 import time
 import curses
 
-
+# 设置脚本的存储路径
 scriptsPath = "./scripts"
-
-
-
 
 while True:
     new_menu = Menu("1.设置SSD启动",
