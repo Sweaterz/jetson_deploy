@@ -20,10 +20,10 @@ echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_PATH/lib64" >> ~/.bashrc
 echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
 echo "export CUDA_HOME=$CUDA_HOME:$CUDA_PATH" >> ~/.bashrc
 
-
+# 安装包路径（需修改）
 cd /home/hk/deb/deb
 
-# 安装cudnn
+# 安装cuDNN
 for package in libcudnn8 libcudnn8-dev libcudnn8-samples; do
     sudo dpkg -i $package"_"$CUDA_ARM64
 done

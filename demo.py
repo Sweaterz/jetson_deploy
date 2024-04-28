@@ -37,13 +37,13 @@ while True:
         choiceName = "exit"
     flag = -1
     if choiceNum == 1:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'bootOnSSD.sh')}")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'bootOnSSD.sh')} | tee -a ./log/bootOnSSD.log")
     elif choiceNum == 2:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'copyLib.sh')}")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'copyLib.sh')} | tee -a ./log/copyLib.log")
     elif choiceNum == 3:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'setNet.sh')}")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'setNet.sh')} | tee -a ./log/setNet.log")
     elif choiceNum == 4:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'optimized_script.sh')}")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'optimized_script.sh')} | tee -a ./log/cudaInstall.log")
     elif choiceNum == 5:
         flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'xxxxxxx')}")
     elif choiceNum == 6:
