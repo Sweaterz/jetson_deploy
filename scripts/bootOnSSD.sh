@@ -17,7 +17,7 @@ fi
 
 # 开始格式化
 DEVICE='/dev/nvme0n1'
-sudo mkfs.ext4 ${DEVICE}
+# sudo mkfs.ext4 ${DEVICE}   说是没必要的语句
 (
 echo g # 创建新的 GPT 分区表
 echo n # 添加新分区
@@ -62,6 +62,4 @@ then
 else
    echo "已取消重启。"
 fi
-
-
 
