@@ -54,7 +54,7 @@ echo "设置启动完成。"
 
 echo "操作完成，设置将在重新启动系统后生效。"
 
-read -p "需要立刻重启吗? (Y/N) " REPLY -n 1
+read  -n 1 -p "需要立刻重启吗? (Y/N) " REPLY
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
    echo "正在重启..."
