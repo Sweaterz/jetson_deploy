@@ -52,3 +52,5 @@ for package in "${tensorRT2[@]}"; do
 done
 
 sudo dpkg -i tensorrt_8.2.1.9-1+cuda10.2_arm64.deb
+
+echo "安装完成，按任意建继续。Completed. Press any key to continue."
