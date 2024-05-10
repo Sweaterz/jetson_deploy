@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #!/usr/bin/python3
 """
-demo.py
+menu.py
 Provides an easy-to-use interface to deploy the Jetson TX2 NX environment using shell scripts.
 提供了一种简单的操作界面部署Jetson开发板
 """
@@ -43,7 +43,7 @@ while True:
     elif choiceNum == 4:
         flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'install_cuda.sh')} | tee -a ./log/install_cuda.log")
     elif choiceNum == 5:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'install_dependency.sh')} | tee -a ./log/install_dependency.log")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'install_dependencies.sh')} | tee -a ./log/install_dependency.log")
     elif choiceNum == 6:
         flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'installSoftware.sh')} | tee -a ./log/test.log")
     elif choiceNum == 7:
