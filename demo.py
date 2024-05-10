@@ -18,9 +18,9 @@ while True:
                     "2.环境安装",
                     "3.设置网络",
                     "4.CUDA组件安装",
-                    # "5.cuDNN安装",
-                    # "6.tensorRT安装",
-                    "7.向日葵安装",
+                    "5.相关依赖安装",
+                    "6.向日葵安装",
+                    # "7.xxxx安装",
                     "8.测试",
                     "9.退出",
                     title="Jetson4.6环境部署脚本",
@@ -41,15 +41,15 @@ while True:
     elif choiceNum == 3:
         flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'setNet.sh')} | tee -a ./log/setNet.log")
     elif choiceNum == 4:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'optimized_script.sh')} | tee -a ./log/cudaInstall.log")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'install_cuda.sh')} | tee -a ./log/install_cuda.log")
     elif choiceNum == 5:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'xxxxxxx')}")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'install_dependency.sh')} | tee -a ./log/install_dependency.log")
     elif choiceNum == 6:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'xxxxxxx')}")
-    elif choiceNum == 7:
         flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'installSoftware.sh')} | tee -a ./log/test.log")
+    elif choiceNum == 7:
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'xxxxxxx')}")
     elif choiceNum == 8:
-        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'test.sh')}")
+        flag = os.system(f"sudo bash {os.path.join(scriptsPath, 'test.sh')} | tee -a ./log/test.log")
         print("测试")
         input()
     elif choiceNum == 9:

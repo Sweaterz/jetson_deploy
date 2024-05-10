@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
-cd ${0%\*}
+#cd ${0%\*}
 
 echo -e "\e[33m********* Start copying lib files to /opt *********\e[0m"
 
-lib_files=("log4cpp" "jsoncpp" "breakpad")
+lib_files=("log4cpp" "jsoncpp" "opencv454")
 
 for lib_file in ${lib_files[*]}
 do
