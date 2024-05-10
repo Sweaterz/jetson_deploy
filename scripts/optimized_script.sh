@@ -21,7 +21,13 @@ echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
 echo "export CUDA_HOME=$CUDA_HOME:$CUDA_PATH" >> ~/.bashrc
 
 # 安装包路径（需修改）
-cd /home/hk/deb/deb
+DEB_DIRECTORY = "/home/hk/deb/deb"
+if [-d "${DEB_DIRECTORY}" ]; then
+    echo "目录 ${DEB_DIRECTORY} 存在."
+else
+    echo "目录 ${DEB_DIRECTORY} 不存在."
+fi
+cd ${DEB_DIRECTORY}
 
 # 安装cuDNN
 for package in libcudnn8 libcudnn8-dev libcudnn8-samples; do
