@@ -3,6 +3,8 @@
 set -e  # exit when any command fails
 
 export CUDA_VERSION=10.2
+
+export CUDA_VERSION2=10-2
 export CUDA_PATH=/usr/local/cuda-$CUDA_VERSION
 export CUDNN_PKG_VERSION=8.2.1.32-1+cuda10.2
 export TRT_PKG_VERSION=8.2.1-1+cuda10.2
@@ -14,7 +16,7 @@ export TRT_ALL=${TRT_PKG_VERSION}_all.deb
 sudo apt-get update
 
 # 安装cuda
-sudo apt-get install -y cuda-toolkit-$CUDA_VERSION
+sudo apt-get install -y cuda-toolkit-${CUDA_VERSION2}
 
 echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_PATH/lib64" >> ~/.bashrc
 echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc

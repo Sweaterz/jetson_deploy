@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd ${0%\*}\lib
+cd ${0%/*}/lib
 
 
 echo -e "\e[33m********* Start copying lib files to /opt *********\e[0m"
@@ -16,3 +16,4 @@ done
 
 echo -e "\e[33m********* End of copying lib files to /opt *********\e[0m"
 
+echo -e "Success to copy lib, press any key to continue."
