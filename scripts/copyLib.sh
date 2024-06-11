@@ -17,3 +17,4 @@ done
 echo -e "\e[33m********* End of copying lib files to /opt *********\e[0m"
 
 echo -e "Success to copy lib, press any key to continue."
+echo -e "安装完成，按任意建继续。Completed. Press any key to continue."

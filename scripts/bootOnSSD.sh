@@ -57,8 +57,8 @@ echo "操作完成，设置将在重新启动系统后生效。"
 read  -n 1 -p "需要立刻重启吗? (Y/N) " REPLY
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-   echo "正在重启..."
    sudo shutdown -r now
+   echo "正在重启..."
 else
    echo "已取消重启。"
 fi

@@ -25,3 +25,4 @@ install_package "SunloginClient" "sunloginclient-10.0.2.24779_kylin_arm64.deb"
 
 echo -e "\e[33m************ End of software installation ************\e[0m"
 
+echo "安装完成，按任意建继续。Completed. Press any key to continue."
