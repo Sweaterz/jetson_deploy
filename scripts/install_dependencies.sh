@@ -9,3 +9,4 @@ sudo -H pip3 install -U jetson-stats==4.2.6   # 安装Jetson-stats 管理工具�
 sudo apt install cmake              # 安装cmake
 sudo apt install libeigen3-dev      # 安装eigen3
 
+echo "安装完成，按任意建继续。Completed. Press any key to continue."

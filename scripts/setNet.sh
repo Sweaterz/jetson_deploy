@@ -10,4 +10,5 @@ cd ${0%/*}
 
 sudo cp ./NetworkConfig/hkwifi /etc/NetworkManager/system-connections
 echo "网络设置成功."
+echo "按任意建继续。Completed. Press any key to continue."
 

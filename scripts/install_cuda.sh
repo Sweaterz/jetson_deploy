@@ -36,12 +36,7 @@ for package in libcudnn8 libcudnn8-dev libcudnn8-samples; do
     sudo dpkg -i $package"_"$CUDA_ARM64
 done
 
-# 安装tensorRT
-declare -a tensorRT=("libnvinfer8" "libnvinfer-dev" "libnvinfer-plugin8" 
-"libnvinfer-plugin-dev" "libnvonnxparsers8" "libnvonnxparsers-dev" "libnvparsers8" 
-"libnvparsers-dev" "libnvinfer-bin" 
-"python3-libnvinfer" "python3-libnvinfer-dev" 
-"graphsurgeon-tf" "uff-converter-tf")
+# 安装tensorRTytoucwwwtoucer-tf")
 
 declare -a tensorRT2=("libnvinfer-doc" "libnvinfer-samples")
 
