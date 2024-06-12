@@ -63,3 +63,6 @@ else
    echo "已取消重启。"
 fi
 
+echo "安装完成，按任意建继续。Completed. Press any key to continue."
+
+
