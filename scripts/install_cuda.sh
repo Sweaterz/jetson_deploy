@@ -23,7 +23,7 @@ echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
 echo "export CUDA_HOME=$CUDA_HOME:$CUDA_PATH" >> ~/.bashrc
 
 # 安装包路径（需修改）
-export DEB_DIRECTORY="/home/hk/deb/deb"
+export DEB_DIRECTORY="/home/hk/deb"
 if [ -d "${DEB_DIRECTORY}" ]; then
     echo "目录 ${DEB_DIRECTORY} 存在."
 else
